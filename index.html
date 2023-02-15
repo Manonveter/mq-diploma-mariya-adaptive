@@ -13,9 +13,12 @@
   <header class="header">
     <div class="header-container">
       <div class="header-top">
-        <a class="logo" href="#"><img src="svg/noemi-logo.svg" alt="логотип"></a>
-        <nav class="menu">
-          <ul>
+        <a class="logo" href="#"><img class="logo-img" src="svg/noemi-logo.svg" alt="логотип"></a>
+        <nav>
+          <button class="menu-burger">
+            <span class="menu-burger-label">открыть меню</span>
+          </button>
+          <ul class="menu">
             <li class="nav-item"><a href="#" class="header-link">главная</a></li>
             <li class="nav-item"><a href="#" class="header-link">посты</a></li>
             <li class="nav-item"><a href="#" class="header-link">статьи</a></li>
@@ -25,9 +28,10 @@
           </ul>
         </nav>
       </div>
-      <div class="header-title">
-        <h1 class="title">блог о творчестве, спорте и образе жизни</h1>
-      </div>
+      <a href="#0" class="logo-mobile">
+        <img class="logo-img" src="svg/noemi-logo.svg" alt="Логотип блога Noemi">
+      </a>
+      <h1 class="title">блог о творчестве, спорте и образе жизни</h1>
     </div>
   </header>
 
@@ -74,7 +78,7 @@
         </article>
       </div>
     </section>
-    <div class="main-container">
+    <div class="main-container container">
       <main class="posts">
         <article class="post">
           <img src="images/last-post1.jpg" alt="белый пляж" class="card-img">
@@ -137,7 +141,8 @@
             <div class="card-description">
               <p class="card-description-text">Лето на носу, а с ним и музыкальные фестивали. На каком же из них вы
                 разобьете свою палатку?</p>
-              <p class="card-description-text">Мы составили список лучших летних фестивалей по всему миру.</p>
+              <p class="card-description-text  card-description-bonus">Мы составили список лучших летних фестивалей по
+                всему миру.</p>
             </div>
           </div>
         </article>
@@ -323,14 +328,14 @@
         </section>
       </aside>
     </div>
-    <section class="goods">
+    <section class="goods container">
       <h2 class="goods-title">наши изделия</h2>
       <div class="goods-items">
         <article class="goods-item">
           <picture>
             <source srcset="images/shop-item-desk1.jpg" media="(min-width: 1200px)">
-            <source srcset="images/shop-item-tablet1.jpg" media="(min-width: 641px) and (max-width:1200px)">
-            <source srcset="images/shop-item-mobile1.jpg" media="(max-width: 641px)">
+            <source srcset="images/shop-item-tablet1.jpg" media="(min-width: 641px) and (max-width:1199px)">
+            <source srcset="images/shop-item-mobile1.jpg" media="(max-width: 640px)">
             <img class="shop-img" src="images/shop-item-desk1.jpg" alt="подушка">
           </picture>
           <div class="card-text-goods">
@@ -351,8 +356,8 @@
         <article class="goods-item">
           <picture>
             <source srcset="images/shop-item-desk2.jpg" media="(min-width: 1200px)">
-            <source srcset="images/shop-item-tablet2.jpg" media="(min-width: 641px) and (max-width:1200px)">
-            <source srcset="images/shop-item-mobile2.jpg" media="(max-width: 641px)">
+            <source srcset="images/shop-item-tablet2.jpg" media="(min-width: 641px) and (max-width: 1199px)">
+            <source srcset="images/shop-item-mobile2.jpg" media="(max-width: 640px)">
             <img class="shop-img" src="images/shop-item-desk2.jpg" alt="подушка">
           </picture>
           <div class="card-text-goods">
@@ -364,8 +369,7 @@
             </div>
             <div class="shop-price-goods">
               <div class="price-goods">
-                <div class="shop-sale"></div>
-                <div class="shop-value">3500 ₽</div>
+                <div class="shop-value shop-value-value">3500 ₽</div>
               </div>
               <button class="button-goods">В магазин</button>
             </div>
@@ -374,8 +378,8 @@
         <article class="goods-item">
           <picture>
             <source srcset="images/shop-item-desk3.jpg" media="(min-width: 1200px)">
-            <source srcset="images/shop-item-tablet3.jpg" media="(min-width: 641px) and (max-width:1200px)">
-            <source srcset="images/shop-item-mobile3.jpg" media="(max-width: 641px)">
+            <source srcset="images/shop-item-tablet3.jpg" media="(min-width: 641px) and (max-width: 1199px)">
+            <source srcset="images/shop-item-mobile3.jpg" media="(max-width: 640px)">
             <img class="shop-img" src="images/shop-item-desk3.jpg" alt="подушка">
           </picture>
           <div class="card-text-goods">
@@ -397,10 +401,8 @@
     </section>
   </div>
 
-  </div>
-
-  <footer class="footer-box">
-    <div class="footer">
+  <footer class="footer-box container">
+    <div class="footer container">
       <ul class="socials">
         <li class="socials-icon">
           <a href="#" class="socials-logo socials-logo-dribbble">
